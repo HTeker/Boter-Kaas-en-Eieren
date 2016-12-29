@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="c4b981c9-a6ad-4dd1-a893-1493c4cf5027" name="SpelerVsComputer" linkedPackageId="3046f290-4f88-4848-a928-c85480a063b4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9a172beb-3de4-4dc8-8439-482035f64ed2" name="Gebruiker" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e28dca8c-eefe-492e-beaf-f0f2a2a333b7" />
+        <targetEnds>
+          <association Id="7aaaffb0-0634-4de9-8885-c672e10549a5" isDerived="false" sourceEndRoleName="Gebruiker" targetEndRoleName="Applicatie starten" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b898eec8-b3ec-4db8-9cef-54e214858763" LastKnownName="Start applicatie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b730d18-c329-401a-b4fd-26b2e1540ba6" name="Gebruiker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a98a62b2-051d-4133-94a7-5b948ee72178" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="07a92fad-aad0-44e1-aedb-e3ffae829a11" name="Applicatie starten" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="147446d9-f7a3-4687-b10c-a4c359738c94" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fe105ec8-2fbb-48f4-8c15-cb23e1d71f6e" />
+          </association>
+          <association Id="1fe58201-6819-4d55-8923-0b7cd312d5b8" isDerived="false" sourceEndRoleName="Gebruiker" targetEndRoleName="Spel starten" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2000681f-a7cb-4c5a-9234-8224b49e7dad" LastKnownName="Start spel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="067a6286-ec18-48ab-ada7-409a72a8ff60" name="Gebruiker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="932a4859-c702-4265-a028-b4b68ce2a833" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71f2cd8a-d15b-4383-994b-570f0cbb517f" name="Spel starten" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="71842b91-8bf9-4a52-a4f4-bc9e25e0debb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7621ed1d-9486-4a4c-915c-df97b2fb748d" />
+          </association>
+          <association Id="d0e9ffea-f2c2-4cc6-af2f-9288f5f1c1e2" isDerived="false" sourceEndRoleName="Gebruiker" targetEndRoleName="Herstart spel" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f05fe4e0-6659-4a6d-91a0-68bc12fd02e8" LastKnownName="Herstart spel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="46ee13e3-56ba-4d87-aad3-d21142a76f63" name="Gebruiker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="36dd3a18-c1f6-408f-afe2-b8d915f9fe6a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="985844a8-6a32-484a-b6ae-b274ead3b9bf" name="Herstart spel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7104eaac-ff83-4848-bd93-74c5ac460251" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7855c413-bbb4-4b43-a89b-355d49afe7fa" />
+          </association>
+          <association Id="dd598c40-246b-4e59-a79e-2aa8c4e4e636" isDerived="false" sourceEndRoleName="Gebruiker" targetEndRoleName="Sluit applicatie af" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="74c26fff-d499-467e-9722-1f5afa1c4bc1" LastKnownName="Sluit applicatie af" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f03426d9-3478-4560-accb-f331f42d084d" name="Gebruiker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f9630648-2379-4b2c-a84a-54845b7403a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93deb47e-e305-4a8d-9ba0-0157d5bf7568" name="Sluit applicatie af" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5447bfc8-5661-4339-aeb3-0c36b1471c41" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="323c920a-b7e3-4e2e-a42d-d69cd802af63" />
+          </association>
+          <association Id="83bfba80-36e2-42f1-b04d-49db5db009c2" isDerived="false" sourceEndRoleName="Gebruiker" targetEndRoleName="Keer terug naar menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="89e22a21-b739-4541-a5ca-bf47cd1bd322" LastKnownName="Keer terug naar menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06754674-44df-41f2-b324-318cb2ecaec7" name="Gebruiker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c65af585-1dfa-426a-9259-ec96e20d72ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6936311e-35d5-463c-bc32-e58fb6a7a1c2" name="Keer terug naar menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="67feaeb9-b24f-4348-9882-4759628b4c6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5653f23a-5e91-4ee5-bf0d-102abf04f85f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4cacd519-d51f-4be7-a4bc-196dc7ed0660" name="Speler" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d5417f91-2bae-4c23-bcde-fb1a6e607c06" />
+        <targetEnds>
+          <association Id="ff44fb61-da12-4a90-be49-5330915353e2" isDerived="false" sourceEndRoleName="Speler 1" targetEndRoleName="Veld aanvinken" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2591d948-bfac-4059-bfa3-4afa0dd381c2" LastKnownName="Vink veld aan" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7da8bce7-d64a-49db-99c7-fca3e83492bb" name="Speler 1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="497d94b8-2d0f-477d-b71d-b7b215ad6d52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38427de4-5556-4710-b165-6c398babf9b4" name="Veld aanvinken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0b655de4-0d6c-452a-a857-8076582282ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a9d39286-0301-48cd-8cb4-3fda58f0a79a" />
+          </association>
+          <association Id="8faca05d-64c5-4215-acf6-315642e19076" isDerived="false" sourceEndRoleName="Speler" targetEndRoleName="Kies Karakter" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7dd8715d-b3d5-4e48-93a7-49e9bcf8290e" LastKnownName="Kies Karakter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b00260a-86ff-4e05-9822-8cf9275df9f1" name="Speler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2822f328-9527-4cd5-91da-f945517bebb5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="31ecf879-be6e-4b11-8404-b83e4c19a29d" name="Kies Karakter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d127c89b-132e-4d09-b75c-c3f9b78c9312" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e42a9340-4fd4-4774-b6af-34bc47977f78" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7f31e1ab-cba4-4253-9352-970e6a93517e" name="Computer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40c686f0-e80c-4e9e-a3b1-88ae8d1696a4" />
+        <targetEnds>
+          <association Id="462517a9-ec7b-4aee-b621-c80cff970709" isDerived="false" sourceEndRoleName="Speler 2" targetEndRoleName="Vink veld aan" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2591d948-bfac-4059-bfa3-4afa0dd381c2" LastKnownName="Vink veld aan" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85b0bc2d-34c8-47f4-b5c9-8762e17807d1" name="Speler 2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c7d47741-9705-42aa-9d7b-22e341e14605" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29f48671-d5b2-4b04-86da-5f56d1f9fc1c" name="Vink veld aan" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="db63560a-a751-4b0b-8b32-8d71de29d7d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8ccbe764-b72d-4195-8f13-23a6af94a615" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="5cac7d35-ad1c-415e-aab8-062947926f47" name="Subsystem21" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d6973f9b-95a8-497a-ba72-e52068c8c0be" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2000681f-a7cb-4c5a-9234-8224b49e7dad" name="Start spel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="048b2027-8233-433d-819c-42512678ece4" />
+        <targetEnds>
+          <association Id="b05c00b0-b01c-433b-ba82-a4862404ee4e" isDerived="false" sourceEndRoleName="Start spel" targetEndRoleName="Kies Karakter" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7dd8715d-b3d5-4e48-93a7-49e9bcf8290e" LastKnownName="Kies Karakter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="003f1528-6724-4841-87c2-a96b1a466253" name="Start spel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="135856ef-a9af-41ad-b98e-f627775116e9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb280329-e006-4316-a647-0e3787d1565d" name="Kies Karakter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4c1c51a9-b5ab-4e96-94d2-6a2ec65640c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="369b8027-f1fc-4ea2-8771-d7a552bd9b65" />
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend Id="d0f45667-7f29-4c8a-ad27-3dd917a08657">
+            <useCaseMoniker Id="b898eec8-b3ec-4db8-9cef-54e214858763" LastKnownName="Start applicatie" />
+            <elementDefinition Id="a91a9e4e-6d34-4e9d-91c3-3bfdba6ce5b0" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b898eec8-b3ec-4db8-9cef-54e214858763" name="Start applicatie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b622bf5a-1c65-4741-a2f1-c011e4fc6bfc" />
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2591d948-bfac-4059-bfa3-4afa0dd381c2" name="Vink veld aan" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9de2a753-fcef-4011-bae6-3a4790b66b54" />
+        <targetEnds>
+          <association Id="65063ce0-70e1-4d9e-8923-e3d9c026510a" isDerived="false" sourceEndRoleName="Veld aanvinken" targetEndRoleName="Veld checken" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="343a2121-8a8f-42ba-8f9e-8ec19d163234" LastKnownName="Check veld op leegte" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0dfbde1-df8d-4b05-8ef7-48d226e4260e" name="Veld aanvinken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6b76dbcf-baf2-46d6-a878-c91a1368e2d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6019c0d4-aff3-42b4-af13-fe3eb131aa27" name="Veld checken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="58ed9f9a-b34c-409a-8ade-218f8148ff10" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ff599d32-6587-4fe5-b86c-01e573860198" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="343a2121-8a8f-42ba-8f9e-8ec19d163234" name="Check veld op leegte" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="33d8ef25-d9fa-4bce-8794-eb2f6b4edf8e" />
+        <targetEnds>
+          <association Id="f238fcbf-3124-4703-8f1b-a8c9d7e7e40b" isDerived="false" sourceEndRoleName="Veld checken" targetEndRoleName="Winnaar checken" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7865f0d9-9e09-468d-91aa-f489a3e8b760" LastKnownName="Check voor winnaar" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d1d3bb74-aa8e-48dd-8630-fe4ccdb4e812" name="Veld checken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8b63acbf-3e03-49b4-b3d7-7760b0e85650" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db922432-a059-46b7-94dd-a43d1e34241f" name="Winnaar checken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b9bb248e-b7d4-41e4-9758-57ca1815e4b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="238908bc-e070-40b2-8a3b-f22d7bbcb428" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7865f0d9-9e09-468d-91aa-f489a3e8b760" name="Check voor winnaar" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="89d7bb26-d68e-44a9-8532-31e73c735c17" />
+        <targetEnds>
+          <association Id="c05ab896-5fcb-41ae-bc3b-832732ec59b0" isDerived="false" sourceEndRoleName="Winnaar checken" targetEndRoleName="Gelijkspel checken" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="81ea592e-84da-4302-8dd5-110fb882a5f0" LastKnownName="Check op gelijkspel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d95f9ac0-7f10-462f-bb8e-5b693386f26f" name="Winnaar checken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="32807b22-e09b-4656-9599-d7f92587ba1f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5e50e293-a937-48be-b4e0-76e3ef8bf780" name="Gelijkspel checken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a9ae7cf1-aaa4-477a-b34e-d0c33de08793" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd95846a-e538-4d4e-8a7e-da52cb79b3b8" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="81ea592e-84da-4302-8dd5-110fb882a5f0" name="Check op gelijkspel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c058b90-0a1a-4553-bc50-d18fe09dddcf" />
+        <targetEnds>
+          <association Id="d2afff37-fc48-4350-904e-deaa6beadd63" isDerived="false" sourceEndRoleName="Gelijkspel checken" targetEndRoleName="Spel stoppen" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dae1c4a2-554d-4c91-85a8-d68b9ec59b7f" LastKnownName="Stop spel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14b493da-53f6-488c-8a7d-296a580cf114" name="Gelijkspel checken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9929888f-5820-403d-9bf3-5418b96e1f6b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c9c4bbe2-83a3-44f4-8ec6-26241cb938fa" name="Spel stoppen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="45528789-3378-47ca-ab2b-8ae3f7d8056a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e7d9f5b4-141b-4bd3-8d95-0e6b94c11c27" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dae1c4a2-554d-4c91-85a8-d68b9ec59b7f" name="Stop spel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e338f069-a5ae-45f9-a072-33e62a6263ab" />
+        <targetEnds>
+          <association Id="5c07f174-23e2-4f25-8083-31e7b8b847e2" isDerived="false" sourceEndRoleName="Stop spel" targetEndRoleName="Weergeef resultaat" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e8f17d60-6ce4-4c78-9d12-8d5569c2129d" LastKnownName="Weergeef resultaat" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="617ad400-06d1-43ef-a012-9cc1aa5eae22" name="Stop spel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d2eb623e-0cc3-4784-91dd-e11d4305dae8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa54a03c-bbb3-4eb4-9005-ffce0444f2b0" name="Weergeef resultaat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="249e7bbc-bd73-407e-87e9-79bce8dcc0f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="343a7dcc-c126-4a37-b2fe-b3e662759bfd" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e8f17d60-6ce4-4c78-9d12-8d5569c2129d" name="Weergeef resultaat" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="513bd69c-9d71-4c95-b1fe-d7bec9ba2068" />
+        <targetEnds>
+          <association Id="ca494ea7-3453-4235-a40c-708b0c57dffa" isDerived="false" sourceEndRoleName="Weergeef resultaat" targetEndRoleName="Herstart spel" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f05fe4e0-6659-4a6d-91a0-68bc12fd02e8" LastKnownName="Herstart spel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="108b73aa-1725-4d51-824c-6477fe28e578" name="Weergeef resultaat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9e27d40b-627a-43e8-9b8f-88f13df46b30" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f1f4ee6-5521-4022-a3f5-3275c353c8fc" name="Herstart spel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2358f090-44a1-4866-93e2-edfff1bb58ca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2a1ac045-8072-43d5-b7c8-01ab577d5a80" />
+          </association>
+          <association Id="5149af4f-b40b-4d87-b8a7-3a4ea28dce50" isDerived="false" sourceEndRoleName="Weergeef resultaat" targetEndRoleName="Sluit applicatie af" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="74c26fff-d499-467e-9722-1f5afa1c4bc1" LastKnownName="Sluit applicatie af" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1bea2b27-fe9e-4458-acd1-1bb68b904630" name="Weergeef resultaat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="61e593a0-c340-4d58-97cd-bfeb403ef7f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="999c9db6-0194-40e2-9c02-f86cb3c3c52e" name="Sluit applicatie af" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b79ccbb2-8f24-4237-9ffd-e9421e2226e7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7e592a90-a21a-47f2-999a-4f8ba74081ce" />
+          </association>
+          <association Id="de3efe5b-67ff-4024-ba45-8cd3371ab34c" isDerived="false" sourceEndRoleName="Weergeef resultaat" targetEndRoleName="Keer terug naar menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="89e22a21-b739-4541-a5ca-bf47cd1bd322" LastKnownName="Keer terug naar menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1aaa003-d2e3-42df-9c39-f2253def679b" name="Weergeef resultaat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="024bf8a9-9efa-48ad-8295-ef2ab1b269b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2320bb73-6c36-4078-9892-4ab3754c8d49" name="Keer terug naar menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d237fc03-105b-4463-8e72-48f681709fac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3614660f-bac7-4a73-bf53-6f4b78682920" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f05fe4e0-6659-4a6d-91a0-68bc12fd02e8" name="Herstart spel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3d396373-e550-4c0b-9adf-bc9844b6bafa" />
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="74c26fff-d499-467e-9722-1f5afa1c4bc1" name="Sluit applicatie af" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fbaccb81-ab23-4e2a-b91e-f8d74ae311ee" />
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="89e22a21-b739-4541-a5ca-bf47cd1bd322" name="Keer terug naar menu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4c34a9a-afd5-4814-8447-cfabde3808b5" />
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="7dd8715d-b3d5-4e48-93a7-49e9bcf8290e" name="Kies Karakter" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="277c4db8-0e0e-4461-b687-ff4755767986" />
+        <targetEnds>
+          <association Id="226ef01d-8532-41ea-a315-42a583e7078c" isDerived="false" sourceEndRoleName="Kies Karakter" targetEndRoleName="Vink veld aan" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2591d948-bfac-4059-bfa3-4afa0dd381c2" LastKnownName="Vink veld aan" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06e4ca27-0632-4fa6-9555-fa5c7848f190" name="Kies Karakter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9b6f4db2-14ba-48b6-9ab9-f7a37abc3365" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bdea7c40-2ea5-492a-82f3-15557c253805" name="Vink veld aan" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="afbf658a-8d15-44e1-8570-7b7f90c141c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5b94f416-ce26-4a0c-b782-1168be9b6990" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="5cac7d35-ad1c-415e-aab8-062947926f47" LastKnownName="Subsystem21" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="3046f290-4f88-4848-a928-c85480a063b4" name="ModelingProject1">
+    <elementDefinition Id="d22833d6-b566-4fde-857a-5cea74f5bf83" />
+    <profileInstances>
+      <packageHasProfileInstances Id="bab9a420-7777-47e1-9c21-06c66351b2e9">
+        <profileInstance Id="018360f3-18b8-49f1-a7ca-52c2f1915bc6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4a8f0c7c-978b-4b5f-8f14-f435a1389048">
+        <profileInstance Id="057f9b9a-946d-40ca-a139-b213f8d84804" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

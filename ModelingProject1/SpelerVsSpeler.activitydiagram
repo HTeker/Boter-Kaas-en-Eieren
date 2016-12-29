@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="df7e09c4-dcb3-4bb0-b4fe-72339ca2cd8e" name="2spelers" linkedPackageId="75845f23-d5d5-4b69-86d9-9cfa7c86110a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="72b8784f-e63b-4bf2-8bc2-7d494a735fd4" name="2spelers" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="1b2d33c2-9bc0-4c40-bde2-50722f99ef26" />
+        <nodes>
+          <initialNode Id="293ccaa8-7c39-4fd6-b7a3-151f6b53c877" name="Initial1" isLeaf="false">
+            <elementDefinition Id="b72af677-7b2c-4c97-8a9f-376f2de227d4" />
+            <flowNodeTargets>
+              <controlFlow Id="0541f2a8-f977-4828-a596-ed33a2b9c5c8" isLeaf="false">
+                <opaqueActionMoniker Id="29f6f010-65cb-4b63-af4f-84ec7462492a" LastKnownName="NaarMenu()" />
+                <elementDefinition Id="644fe560-8e13-4211-b1e2-27ac48048fc6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="28935dc2-1f74-482e-9f06-60af0141cf52" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a062ecf1-401d-4fc2-922c-3098d9cf99df" />
+          </activityFinalNode>
+          <opaqueAction Id="29f6f010-65cb-4b63-af4f-84ec7462492a" name="NaarMenu()" isLeaf="false">
+            <elementDefinition Id="99ea96d2-2626-4018-86e3-8d7918648347" />
+            <flowNodeTargets>
+              <controlFlow Id="3876046e-c6e3-4380-9f28-adf5c417ff6d" isLeaf="false">
+                <acceptEventActionMoniker Id="d42ec755-8d65-4696-8673-579e3e47c510" LastKnownName="Starten()" />
+                <elementDefinition Id="84fe8c64-ad91-426e-b455-cc8dd237098f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <acceptEventAction Id="9c00de63-3109-49a4-af94-c46e14d9a050" name="ZetPlaatsen()" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="419507f5-12a8-491a-acf3-ac4b511f124d" />
+            <flowNodeTargets>
+              <controlFlow Id="59ab0974-a738-482d-aa41-10a23aad65b2" isLeaf="false">
+                <opaqueActionMoniker Id="b1a5dc6f-7dcd-47f2-b257-b0b14f7a4c83" LastKnownName="IsVeldBeschikbaar()" />
+                <elementDefinition Id="ba21520a-94f0-4431-b3cb-1c52fb0289c8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction Id="b1a5dc6f-7dcd-47f2-b257-b0b14f7a4c83" name="IsVeldBeschikbaar()" isLeaf="false">
+            <elementDefinition Id="339ab0f7-f951-4957-9dc4-4da88d56b1a5" />
+            <flowNodeTargets>
+              <controlFlow Id="91431e95-6d76-445e-8d7f-ef9ba3db5c49" isLeaf="false">
+                <decisionNodeMoniker Id="5f283430-8a3b-4f51-b2ad-7477795d4cbc" LastKnownName="Decision1" />
+                <elementDefinition Id="c7bd6909-f6a7-4438-a930-f0f1c67e0839" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="dc09335c-ade6-4400-8dff-a253090d8ec4" name="IsWinnaar()" isLeaf="false">
+            <elementDefinition Id="b790ac23-0ae7-4515-9c5a-5cab7ef89cdb" />
+            <flowNodeTargets>
+              <controlFlow Id="86d746c6-4035-44b1-86a7-47ae6600687c" isLeaf="false">
+                <decisionNodeMoniker Id="2dc2abee-c567-40b4-8569-34e4c12a59fa" LastKnownName="Decision2" />
+                <elementDefinition Id="50fbcb14-e198-46a3-b6b6-f87f711af960" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="2dc2abee-c567-40b4-8569-34e4c12a59fa" name="Decision2" isLeaf="false">
+            <elementDefinition Id="865e49b4-a4e9-41eb-973e-13bd5eec273b" />
+            <flowNodeTargets>
+              <controlFlow Id="0e8a6f51-5ad1-4426-8387-5c1291f9a97c" isLeaf="false">
+                <opaqueActionMoniker Id="2a296e69-f14f-47d8-bece-307b3f17aaf9" LastKnownName="IsGelijkspel()" />
+                <elementDefinition Id="b430ad9d-98cd-41f8-920c-4086fe7734ca" />
+              </controlFlow>
+              <controlFlow Id="babe8138-6f85-4e3f-9663-1f406cf4f6a7" isLeaf="false">
+                <opaqueActionMoniker Id="abc65bb6-2645-4469-910f-477746ef9cfa" LastKnownName="ResultaatTonen()" />
+                <elementDefinition Id="84a9496b-e5e6-404d-8577-0761ecf498b3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="2a296e69-f14f-47d8-bece-307b3f17aaf9" name="IsGelijkspel()" isLeaf="false">
+            <elementDefinition Id="4f420ab0-8616-4c38-b611-e1d864db4d6b" />
+            <flowNodeTargets>
+              <controlFlow Id="7f4c7bb8-7ddf-42db-a2de-55cce93bdbdd" isLeaf="false">
+                <decisionNodeMoniker Id="193dbef5-f5e4-4f85-a8db-e8db7263960c" LastKnownName="Decision3" />
+                <elementDefinition Id="97dc8b1a-b8b7-4bdb-a936-0e0a4a599c91" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="193dbef5-f5e4-4f85-a8db-e8db7263960c" name="Decision3" isLeaf="false">
+            <elementDefinition Id="382a2d07-6ee3-4602-9d22-905685b7fbe0" />
+            <flowNodeTargets>
+              <controlFlow Id="90da61d1-a61e-4c4d-9467-6fe38268040f" isLeaf="false">
+                <opaqueActionMoniker Id="abc65bb6-2645-4469-910f-477746ef9cfa" LastKnownName="ResultaatTonen()" />
+                <elementDefinition Id="36baba42-8a86-491f-a2d9-2341f8bc81eb" />
+              </controlFlow>
+              <controlFlow Id="ba2555bb-0392-4f4f-b1e7-6d5ea6154c25" isLeaf="false">
+                <opaqueActionMoniker Id="27be0108-5fb6-4c20-ba63-0cc3f51b18d4" LastKnownName="BeurtWisselen" />
+                <elementDefinition Id="93dddb31-862f-4892-83dd-24d225c1e1b1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="abc65bb6-2645-4469-910f-477746ef9cfa" name="ResultaatTonen()" isLeaf="false">
+            <elementDefinition Id="f182f2d0-840f-4ae4-a31b-1ef76a633cb3" />
+            <flowNodeTargets>
+              <controlFlow Id="08f3aee9-afa4-4021-a516-592318d86fd6" isLeaf="false">
+                <decisionNodeMoniker Id="bee85dad-0746-45b7-b47c-838c7fb58cdb" LastKnownName="Decision4" />
+                <elementDefinition Id="41ac5370-e466-48a0-9f78-1c4e498ef324" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="bee85dad-0746-45b7-b47c-838c7fb58cdb" name="Decision4" isLeaf="false">
+            <elementDefinition Id="7760f408-27d7-4049-b46a-5c367d87b17b" />
+            <flowNodeTargets>
+              <controlFlow Id="7ed3a385-7f70-4293-b67b-c61d0c86e750" isLeaf="false">
+                <acceptEventActionMoniker Id="4a045833-fc47-47c1-b839-fc3a7f41af4f" LastKnownName="Herstarten()" />
+                <elementDefinition Id="3047be47-80be-4a74-beec-f2fbb0c16812" />
+              </controlFlow>
+              <controlFlow Id="e90de8e5-eef8-42f0-b35d-ce8a73cb7f2d" isLeaf="false">
+                <acceptEventActionMoniker Id="403cb67d-8e24-4763-9a35-eba75176387d" LastKnownName="Afsluiten()" />
+                <elementDefinition Id="d81e6065-6b63-4b20-ab2d-50a9c5f7de91" />
+              </controlFlow>
+              <controlFlow Id="5ceee8cf-f3bf-4ebb-a274-3caab0e15f23" isLeaf="false">
+                <acceptEventActionMoniker Id="34375516-c611-4d45-bb16-d1921c16cb81" LastKnownName="NaarMenu()" />
+                <elementDefinition Id="212c39bc-8e89-4ea0-a114-e5e35b2cbc58" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <acceptEventAction Id="34375516-c611-4d45-bb16-d1921c16cb81" name="NaarMenu()" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="fb7d46bf-0e6c-4119-9d06-e3bd89f6cd7f" />
+            <flowNodeTargets>
+              <controlFlow Id="a0137e43-a17b-4f77-b300-aa59270aa712" isLeaf="false">
+                <opaqueActionMoniker Id="24cfdad3-3a7e-4dee-9496-168266c0943e" LastKnownName="VeldenLegen()" />
+                <elementDefinition Id="883f78ee-febc-43f1-ad3d-88a1b13277d7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <acceptEventAction Id="4a045833-fc47-47c1-b839-fc3a7f41af4f" name="Herstarten()" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="1d2c42a8-0064-445f-8d7c-6b4dee36aa56" />
+            <flowNodeTargets>
+              <controlFlow Id="44606a71-b00d-4208-b27f-5d12e154557a" isLeaf="false">
+                <opaqueActionMoniker Id="f77e334c-41c1-4710-98a9-1b81e3835c54" LastKnownName="VeldenLegen()" />
+                <elementDefinition Id="27b8d1f3-d3cf-455f-b0d2-240ecc129067" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <acceptEventAction Id="403cb67d-8e24-4763-9a35-eba75176387d" name="Afsluiten()" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="e018213e-f828-4f32-99ed-09ecf622f348" />
+            <flowNodeTargets>
+              <controlFlow Id="14ac20d6-8877-4ccd-b596-3dfa0c0c6020" isLeaf="false">
+                <activityFinalNodeMoniker Id="28935dc2-1f74-482e-9f06-60af0141cf52" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="e60e17a2-df07-4181-985a-e7bbfd92f9d2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <acceptEventAction Id="d42ec755-8d65-4696-8673-579e3e47c510" name="Starten()" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="478522a3-f048-4e62-855b-db768c7c7914" />
+            <flowNodeTargets>
+              <controlFlow Id="c81196a6-8a19-469f-a5de-b87a31819cf6" isLeaf="false">
+                <acceptEventActionMoniker Id="9c00de63-3109-49a4-af94-c46e14d9a050" LastKnownName="ZetPlaatsen()" />
+                <elementDefinition Id="ff09307c-b320-462a-acee-add5083806c1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <decisionNode Id="5f283430-8a3b-4f51-b2ad-7477795d4cbc" name="Decision1" isLeaf="false">
+            <elementDefinition Id="99e8c678-7757-4069-bf58-76c0172340a7" />
+            <flowNodeTargets>
+              <controlFlow Id="f4d3b095-0840-4ef9-85f1-cacdeef4743d" isLeaf="false">
+                <opaqueActionMoniker Id="dc09335c-ade6-4400-8dff-a253090d8ec4" LastKnownName="IsWinnaar()" />
+                <elementDefinition Id="8fd99771-81c7-4987-aab7-ef1446781df3" />
+              </controlFlow>
+              <controlFlow Id="9c495040-8fcd-41fe-b054-fa55a183d451" isLeaf="false">
+                <acceptEventActionMoniker Id="9c00de63-3109-49a4-af94-c46e14d9a050" LastKnownName="ZetPlaatsen()" />
+                <elementDefinition Id="388cf2ad-4665-4cd6-ad42-190a0638017a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="f77e334c-41c1-4710-98a9-1b81e3835c54" name="VeldenLegen()" isLeaf="false">
+            <elementDefinition Id="c4e5b4b3-66ec-4f6c-8ae8-bd3b7074307c" />
+            <flowNodeTargets>
+              <controlFlow Id="3ded5ff5-7274-4646-a63b-a35c63ab1c55" isLeaf="false">
+                <acceptEventActionMoniker Id="9c00de63-3109-49a4-af94-c46e14d9a050" LastKnownName="ZetPlaatsen()" />
+                <elementDefinition Id="5b7081eb-3616-4a6f-b9c7-1145353ec57b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="24cfdad3-3a7e-4dee-9496-168266c0943e" name="VeldenLegen()" isLeaf="false">
+            <elementDefinition Id="74cab67e-9e5a-4f4a-b9e2-e85a3d61c99c" />
+            <flowNodeTargets>
+              <controlFlow Id="b869c9b5-3800-4ede-b796-f23a6aa34bd9" isLeaf="false">
+                <opaqueActionMoniker Id="29f6f010-65cb-4b63-af4f-84ec7462492a" LastKnownName="NaarMenu()" />
+                <elementDefinition Id="31e8bd37-97ec-43e1-b4ea-fe96564367c5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="27be0108-5fb6-4c20-ba63-0cc3f51b18d4" name="BeurtWisselen" isLeaf="false">
+            <elementDefinition Id="c28ebdcf-7a7f-4077-8bc0-a09433757098" />
+            <flowNodeTargets>
+              <controlFlow Id="b9024111-07c6-46f2-bdd6-0a81f67b1e24" isLeaf="false">
+                <acceptEventActionMoniker Id="9c00de63-3109-49a4-af94-c46e14d9a050" LastKnownName="ZetPlaatsen()" />
+                <elementDefinition Id="a0e181f8-794c-4f47-ba1d-6d635701ee05" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="75845f23-d5d5-4b69-86d9-9cfa7c86110a" name="ModelingProject1">
+    <elementDefinition Id="d22833d6-b566-4fde-857a-5cea74f5bf83" />
+    <profileInstances>
+      <packageHasProfileInstances Id="58c02e2a-2746-49c1-8f43-b33d4a95e2c1">
+        <profileInstance Id="00000ff2-622d-488e-9598-48f2908f7380" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="57d5efb0-904d-4d5c-8bbb-9770feb91a2c">
+        <profileInstance Id="f7d406e8-9064-4fec-a23d-76a319a39028" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

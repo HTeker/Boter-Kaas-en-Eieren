@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="6fa6e3bd-007d-43d3-a9ea-44dc9a459b80" name="2spelers" linkedPackageId="f9afc177-d9a0-405e-96bc-37f9c5b9f50b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d2dcf03e-4e1a-431e-90b2-720c27d54b82" name="Bord" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb0779ed-e4d6-4332-83f4-b99b75470952" />
+        <targetEnds>
+          <association Id="ee15358e-b885-4a24-93d0-701cfeccef4a" isDerived="false" sourceEndRoleName="Bord" targetEndRoleName="Veld" isLeaf="false" name="bestaat uit" isAbstract="false">
+            <classMoniker Id="ea051ec4-fb85-4d39-9b43-b7c1f727a99c" LastKnownName="Veld" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1d5eddd9-fb4b-4476-acf0-445ce3945bdf" name="Bord" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="65901aae-f69f-4610-8300-15eb9836e506" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e9ad94ee-0e2c-408d-9a98-8482259be1bf" name="Veld" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="e50e3d59-91c7-4c6c-a984-98bec76a39cd" name="Lower" value="9">
+                      <elementDefinition Id="a5f9f5f2-ed36-45cd-ada1-50e12ccb79f8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7bc206a0-5775-4a73-978a-edfef9b350ad" name="Upper" value="9">
+                      <elementDefinition Id="a444a061-ba5f-43b6-b516-b26a60dfe327" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ff9005a5-4ac5-4d36-b421-8f29aa20c2d4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7cdab10e-6de4-4dba-92be-7d2ff1573c88" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7a36c03f-1294-4c23-9387-c64243310190" name="velden" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="95b70b81-69fd-4e59-8029-daa6286e324c" name="Lower" value="9">
+                <elementDefinition Id="10209506-03d8-4d4f-bdda-6551372f9bf4" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="85843499-9033-4965-91e8-68ea1f950512" name="Upper" value="9">
+                <elementDefinition Id="de86362e-24e2-4e8c-b9fe-ed159eeb610f" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="da6c64f3-2c31-48ed-b282-8cf6113b71d6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="405613b4-802a-4c3c-a833-05b78d75d883" LastKnownName="Veld" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="352fa792-bb2d-4b9c-8ce9-aa804d6a385c" name="Bord" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="79b18b00-6a7f-42d3-8a8a-e8b2e587a1d9" />
+          </operation>
+          <operation Id="336470d2-7490-41fd-80ad-75779335ea51" name="ZetPlaatsen" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5c909aff-c4a7-4f29-8edd-b047b46dd46d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="68a8048a-cbee-43af-adf2-bb635b31d978" name="int veldPos" direction="In" isUnique="false">
+                  <elementDefinition Id="b21f1aa5-e226-4d74-b0ee-03843b6c733f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7fee552b-35b7-4d2c-ab43-1aa24abdd9ba" name="Mogelijkheden beurt" direction="In" isUnique="false">
+                  <elementDefinition Id="45a87905-c86a-43a8-a455-f604c786f996" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f515eb34-00d4-4da5-8819-f5e2c9547710" name="VeldenLegen" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4a99dce5-79a4-472a-ad99-87876b34dc26" />
+          </operation>
+          <operation Id="d6e4ae52-9fde-48d9-ae73-c1541f8473df" name="GeefAlleBeschikbareVelden" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="12d5cddd-9445-42a5-9b95-ef0c86b10227" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cb48fa12-061b-4394-b87a-b97875a17926" direction="Return">
+                  <elementDefinition Id="c9edb9f7-f6b1-41b0-a9e6-4fabd7476b43" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="df80a313-cd93-41c8-8612-daa8ee7c3072" LastKnownName="List &lt;int&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4285499e-6612-42ae-857b-593da86d0a23" name="GeefWinMogelijkheden" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ec187ac9-ebff-4dd7-9927-ea86a6883f88" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c16c1229-b02c-4fb0-81b9-6cc8e9bfa70b" direction="Return">
+                  <elementDefinition Id="65188a20-ac0d-41d5-bc2a-a7ea3d51db83" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7e880626-355e-4c77-aa4c-ade43fd5f486" LastKnownName="List &lt;int&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0f2c736f-1763-419e-ae23-88693455bbe6" name="IsVeldBeschikbaar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d968ad15-1cbd-4dc7-8c1c-96b5a54ae892" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f7d3a2da-e68d-45c8-9d93-b9d7a5faf2bc" name="int veldPos" direction="In" isUnique="false">
+                  <elementDefinition Id="683ab96e-6d50-4e8b-8c23-6dffa7e2c26c" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="eaad56c0-ca66-4a4d-801c-31ace6019f0d" direction="Return">
+                  <elementDefinition Id="43e76399-09fa-4366-950f-4b9e3392ef75" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="91c35594-41d6-4c45-b8c4-90cf4251ee3b" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bd8b56c0-8c75-4669-ba90-20620cf99bc3" name="IsWinnaar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="59d4740e-3a4c-4fef-81c4-629368b2a3f7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3d1e4dc6-da0d-4976-9bd5-6781bd285a99" direction="Return">
+                  <elementDefinition Id="7b5f4107-6629-4fbf-bc37-fac4a5c71011" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="145d9840-4c58-4bc5-a459-0ba4cf921f41" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bd23a7b1-de21-463a-8b95-2c5d05aa35fe" name="IsGelijkspel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="647c6a2c-7593-4084-9ec6-4364b1eb1b84" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="016ee50d-47fc-4f42-8e5f-dd47f37a65e9" direction="Return">
+                  <elementDefinition Id="77c6a194-3e3c-46b7-86dd-0c96129f4632" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="220451fe-7243-489f-b75f-84f1566136bc" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ea051ec4-fb85-4d39-9b43-b7c1f727a99c" name="Veld" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1b7cabb5-759a-412c-b56e-e72c1dbe961e" />
+        <targetEnds>
+          <association Id="9498a3ff-a983-4a7b-b69a-7ad809117512" isDerived="false" sourceEndRoleName="Veld" targetEndRoleName="Enumeration1" isLeaf="false" name="heeft een" isAbstract="false">
+            <enumerationMoniker Id="1a95e7c3-3b72-47b8-8a4c-53d77ba61943" LastKnownName="Mogelijkheden" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="45afe290-242b-48be-ac1f-cda566fa0eb0" name="Veld" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3274dc60-7c50-40f0-ab31-f4e743a56984" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f99801c-c7c7-47f7-b77c-4e64c4e215ee" name="Enumeration1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="57f49d3c-cd46-4aa6-9350-10417e011f04" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7a7d03e3-42ed-49ec-9c26-69be9d592755" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="17aaa50c-7e6d-42c8-bd67-f93119597513" name="veldStatus" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="db4f5272-2888-4bb2-b5b2-d27ad350443a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b83336e7-d86e-4405-853c-6dd6eedcd01e" LastKnownName="Mogelijkheden" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fb9e4da6-196d-4c6f-adc5-511cbc395563" name="Spel" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="332a57ab-0343-481d-804e-63ee7f7af4cd" />
+        <generalsInternal>
+          <generalization Id="16eb23ae-676d-4d36-a3d0-e07cc15ff9ad" isSubstitutable="false">
+            <classMoniker Id="96eb9b53-3a5a-4533-8b31-7d049b7a727a" LastKnownName="Spel2Spelers" />
+            <elementDefinition Id="9304ab79-473e-4f8f-955d-00c507005117" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="dbbb2e83-07c0-4d94-bb29-f714d4e52572" name="bord" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b5cd019f-e8e4-4573-b89e-7808dfd248ae" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5dca7192-a5c6-4a7f-a93d-0caa7af54879" LastKnownName="Bord" />
+            </type_NamedElement>
+          </property>
+          <property Id="16583ea6-5933-4e78-ac11-823d42318467" name="beurt" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4f62bb66-86d0-41e5-9488-4a808028401c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6bb5a20a-36f4-4c5b-a829-540135648bdd" LastKnownName="Mogelijkheden" />
+            </type_NamedElement>
+          </property>
+          <property Id="207eacf5-2635-45cb-87e9-dccc2e34b7dd" name="aantalWinX" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="34156d6f-d579-4ec1-8d7f-27d728e8e893" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="624ad24b-0c10-4a58-ab02-f5b0f994b44b" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="135589ad-9e3c-47d8-8db6-7ab2392aa66c" name="aantalWinO" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3de0933c-4957-423c-9e15-f81eaedfb996" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c3a92a22-869a-48c0-a7c8-a97d2308dd4d" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="e18b10c3-78e3-4b55-88f3-a3dc26100c19" name="aantalGelijk" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eae95fda-06a1-4765-8e81-f6f4dff5d668" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="897a414d-b940-4368-a7d4-bd104fb0381a" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1697dc03-c1af-45b9-a302-bdbef56f22e5" name="NaarMenu" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="34fab478-1ba4-4034-aa8e-7175339d815b" />
+          </operation>
+          <operation Id="f403043b-2571-472e-a936-7cb11597acbd" name="BeurtWisselen" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8a3e5ddd-893a-4a1f-b741-7d865b2326ac" />
+          </operation>
+          <operation Id="d1488045-13fc-44ed-bb36-05bc1ade87c8" name="WinnaarChecken" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="591ece0e-8122-4018-aed8-7f842717ead7" />
+          </operation>
+          <operation Id="fe8113ef-36ca-4fda-a7ea-e2ed33de15ac" name="GelijkspelChecken" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7303e27f-a40d-4534-9c3a-e38bf92567a9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="1a95e7c3-3b72-47b8-8a4c-53d77ba61943" name="Mogelijkheden" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2bda1d4e-77df-4c13-b4dd-7a0545964ab7" />
+        <ownedLiterals>
+          <enumerationLiteral Id="542a7584-da3a-4128-bd2c-da810dee51e6" name="-">
+            <elementDefinition Id="6072c92d-f30e-45e4-ae58-d7fa69b707d3" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="8ef80ce3-d262-4154-8813-731a79a8ef64" name="X">
+            <elementDefinition Id="7192107d-cae6-48fb-8d48-2fd65ee6a008" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="d89fcdf6-a3c9-4c3e-9c3b-0e0c345e328f" name="O">
+            <elementDefinition Id="f366f589-06ac-4e84-8864-4a9c7da0b03f" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="b83336e7-d86e-4405-853c-6dd6eedcd01e" name="Mogelijkheden" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Mogelijkheden">
+        <elementDefinition Id="2bda1d4e-77df-4c13-b4dd-7a0545964ab7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ba621d27-6649-46a2-b63f-09f1f2c02341" name="Form1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="619bc3ab-a2bf-4b40-9bef-28f67d65a644" />
+        <ownedAttributesInternal>
+          <property Id="eb7c4431-704f-4eaa-91a0-b93d16a779f1" name="spel" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e5b76b52-d5b2-41a3-b630-6c45a238d7a0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="82c35ea6-a945-4283-9dc1-a33c40dc21a9" LastKnownName="dynamic" />
+            </type_NamedElement>
+          </property>
+          <property Id="07c194c6-44c2-4932-84f5-4a7e6ddb3573" name="form" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eee78fa1-efae-413c-b2f8-28a823c84c81" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a366fb9-2e9e-409f-aefb-312e534be53a" LastKnownName="Form1" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="44f16c04-f889-4b36-bf29-e48c1adfa453" name="VeldClickEventHandler" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="57c738f8-44a1-4b16-8e00-2cc45b3082cc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="586164bd-156c-47b0-8c3f-31106551fcfc" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="ebff9fb4-7026-4b33-82c9-3b70c64bf4b2" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ee724007-b60e-4b32-9214-0538de5dbe3d" name="EventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="5f3b7a9a-1588-4cd6-95b3-b1fe806ad796" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f941db0c-0f71-4111-b896-312be606bedb" name="AfsluitenClickEventHandler" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="356412d1-5c9d-4f2a-86d4-caa492995e05" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a9fb7e5e-c547-48de-9d4a-bc09658334d7" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="13730a14-88ca-436a-aa4f-ac584f499671" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="de3a498a-b772-499f-87ba-7f1afb71c1cc" name="EventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="ec892b11-a4ce-4ab7-90bb-ef698fbbb044" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="052dd029-c06c-415e-9209-abbb47fd3f04" name="HerstartenClickEventHandler" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3476aae6-e8ec-41d6-ab58-bd5c813cc178" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f35545ef-3de7-4e45-bc89-e99df15f489f" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="ef0faede-45ab-4a37-be52-9db496f40b33" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="093cef75-262e-4eb3-b6ae-7f46d6a8c2c0" name="EventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="27c4ec69-3664-438d-ad80-9a0bb43164c8" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="891c475e-42bb-46b3-85cc-d7514758ea38" name="MenuClickEventHandler" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6c520220-9b7e-44ff-86da-e39e02d9b994" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5e6094e7-9cf7-4eee-b5c9-a66388925c6c" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="6a7d2759-3e78-4f54-a5d5-178971d4361f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8643d97a-4de2-464a-acc8-14ec4947c7ca" name="EventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="cfe0eec3-4750-4471-858e-feb53005ef70" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b5141a3a-f566-40db-8b9e-0eead0149bec" name="LinkKarakterClickEventHandler" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="51847a11-800b-4159-b3c2-ca34e073c06a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6811a784-2675-4c7e-b119-6c175fd5bd1c" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="9f5c4c84-2e68-4a5e-a692-ec48802722f4" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bed3c3b0-e372-41fb-b33a-e042749f51f4" name="LinkLabelLinkClickedEventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="f7dafe44-92ad-45e2-a1da-8b325346358a" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d8c94110-8b06-45a7-8c1c-dc603300ad8d" name="LinkSpelerVsCompClickEventHandler" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="779912c2-b691-45f1-a997-8eeeb48947c0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="90b8b37e-cb42-4991-9fab-e9fd2245b6f9" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="4a9172f2-5372-44d2-a4f0-16257d20f87f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2594a690-23aa-496d-bd68-2092b77e8e3a" name="LinkLabelLinkClickedEventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="42fa64d7-2c33-4fab-a8e1-4afe72845506" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a82150ca-467a-4002-b59f-bc8b4563a98a" name="LinkSpelerVsSpelerClickEventHandler" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="394371fa-64ac-48f9-8579-79c451182af6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="35ab1ab2-4bc5-4178-83c3-b1063acec815" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="d78ecebf-c6da-4099-9cc1-79c8f3e5035d" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fb9e59ad-38dc-4148-8f60-c5665fec05c8" name="LinkLabelLinkClickedEventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="3626ab7a-2409-4691-a94a-771d17c047d2" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1c4ac20f-8a27-4681-9ae9-69199a6f87e3" name="ScoreWijzigen" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0ce543ca-dc76-4f82-b5b2-de1705f82bb2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a9364982-4027-40e5-bc0c-dd587f0d8e3a" name="String element" direction="In" isUnique="false">
+                  <elementDefinition Id="c5ffecbd-1b27-49aa-b8ba-b8f32bc70b59" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6da0bbe2-ab7b-4dc6-8de9-15a3392fe7c8" name="int score" direction="In" isUnique="false">
+                  <elementDefinition Id="4d636f25-3f51-4512-b4ee-45ce957f8b22" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a3ffd63b-079c-41e7-8d54-a76c872d29b1" name="StaticScoreWijzigen" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="148276c7-10e2-4b90-9e3f-b7c1b922183c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="be1ec6a0-bfd0-4d71-8824-297080b1f792" name="String element" direction="In" isUnique="false">
+                  <elementDefinition Id="324ec3ba-040f-42f2-bf31-19ecd370d6cd" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="900f7f11-8e7f-4512-8831-b5efd51317b9" name="int score" direction="In" isUnique="false">
+                  <elementDefinition Id="734a7083-04dd-4df8-8c5d-79b9a2061537" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="53cc4de6-03c2-4b38-9365-d7860f729c2e" name="TitelWijzigen" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="309a5d65-8540-4e2c-be4d-45933919e64e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ec2af404-b1c8-45b0-8723-dfca4fcb8b22" name="String tekst" direction="In" isUnique="false">
+                  <elementDefinition Id="d128a8bd-1ad1-4d47-ad3e-828029f520c3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="78368d3a-8de4-4326-a811-80395f16f4d1" name="StaticTitelWijzigen" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="054e9db3-7ab5-4508-82ca-dd099a31e073" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cd0397d6-f6a9-4975-9cbe-59c1d7be8199" name="String tekst" direction="In" isUnique="false">
+                  <elementDefinition Id="ae975908-0a3e-4b54-8d8c-e5d7a22d9d70" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a10d1b9f-f0ee-40bc-b4a6-9230ecd95b91" name="ElementenTonen" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9ebcc0b7-75a6-4f86-a5d8-57ec821e2983" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ed38d0bb-a1f1-4373-9086-49a56c9d382a" name="String element" direction="In" isUnique="false">
+                  <elementDefinition Id="d68c11e6-0c18-4fe7-b3a7-657e64df9bd5" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="631c83f5-bd8c-4af6-96ad-261ed9216fc7" name="StaticElementenTonen" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="efdeec3d-253b-49c2-8f3b-5673ce7259e7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="53d0169c-af5a-45cf-919a-aa33c7ee563b" name="String element" direction="In" isUnique="false">
+                  <elementDefinition Id="9cd4da01-e5b5-4cee-98fe-59ac45c394c3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="82c35ea6-a945-4283-9dc1-a33c40dc21a9" name="dynamic" isAbstract="false" isLeaf="false" cachedFullName="dynamic">
+        <elementDefinition Id="9b108a82-a5df-4db5-9df2-587b9c6e02f5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4a366fb9-2e9e-409f-aefb-312e534be53a" name="Form1" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Form1">
+        <elementDefinition Id="619bc3ab-a2bf-4b40-9bef-28f67d65a644" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="897a414d-b940-4368-a7d4-bd104fb0381a" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c3a92a22-869a-48c0-a7c8-a97d2308dd4d" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="624ad24b-0c10-4a58-ab02-f5b0f994b44b" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5dca7192-a5c6-4a7f-a93d-0caa7af54879" name="Bord" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Bord">
+        <elementDefinition Id="8cf34343-8597-4f9d-a1ab-82506c59f818" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6bb5a20a-36f4-4c5b-a829-540135648bdd" name="Mogelijkheden" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Mogelijkheden">
+        <elementDefinition Id="2bda1d4e-77df-4c13-b4dd-7a0545964ab7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="405613b4-802a-4c3c-a833-05b78d75d883" name="Veld" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Veld">
+        <elementDefinition Id="1b7cabb5-759a-412c-b56e-e72c1dbe961e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="220451fe-7243-489f-b75f-84f1566136bc" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="91c35594-41d6-4c45-b8c4-90cf4251ee3b" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="145d9840-4c58-4bc5-a459-0ba4cf921f41" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="df80a313-cd93-41c8-8612-daa8ee7c3072" name="List &lt;int&gt;" isAbstract="false" isLeaf="false" cachedFullName="List &lt;int&gt;">
+        <elementDefinition Id="0ae80270-f38c-4c97-8a75-7f8e3b10daff" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7e880626-355e-4c77-aa4c-ade43fd5f486" name="List &lt;int&gt;" isAbstract="false" isLeaf="false" cachedFullName="List &lt;int&gt;">
+        <elementDefinition Id="0ae80270-f38c-4c97-8a75-7f8e3b10daff" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="21c8b466-fce0-445d-9fe9-55042a58cd58" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e940daec-fca8-48df-88e1-3dbbc2c76275" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ce01d909-47ae-4757-a9bf-694fffc6b28d" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="96eb9b53-3a5a-4533-8b31-7d049b7a727a" name="Spel2Spelers" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="82e28d8e-4b65-493d-9296-0589e9c1ff37" />
+        <targetEnds>
+          <association Id="c8b595c5-45c7-47fa-9f8a-d1c89e5ca28c" isDerived="false" sourceEndRoleName="Spel2Spelers" targetEndRoleName="Bord" isLeaf="false" name="wordt gespeelt op" isAbstract="false">
+            <classMoniker Id="d2dcf03e-4e1a-431e-90b2-720c27d54b82" LastKnownName="Bord" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f59a1be4-7106-403a-a761-ce20f15e529b" name="Spel2Spelers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2a00e78f-b383-4161-b752-a1b0e2e0e54f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05a99c79-4e27-4fc1-a33a-1a3ae5ff3f7c" name="Bord" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="edbab116-7514-41b7-b4ac-fb3ce8771aa3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="15ff2777-c13a-4c5e-948e-9bb67ba8d9d6" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="e965b92f-9206-4a9f-adf7-11037d37242b" name="Starten" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cd3d4795-4af4-439a-bf60-d57aad0c1884" />
+          </operation>
+          <operation Id="24ba7549-9cbe-45aa-85ab-8050756657b8" name="ZetPlaatsen" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2a624375-f77d-4c6e-8dab-b9f36ff27bba" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9d072166-457e-44b0-920e-0e36c7805ad5" name="int veldPos" direction="In" isUnique="false">
+                  <elementDefinition Id="e85b3530-840c-4282-8c64-54e58d2a9096" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="06f34631-9abc-4b77-b24a-c1fd9949a55e" direction="Return">
+                  <elementDefinition Id="a5df890f-1e0b-4e80-9f14-d84a7b31a4d0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="587409fe-adf1-4ad6-93a5-7ad5fc24fb97" LastKnownName="char" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="06584cd5-dc1f-4653-a8f9-b8fb9d3c2a06" name="Herstarten" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="97146749-fb38-4f5a-8ca9-4f4850a891e9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="587409fe-adf1-4ad6-93a5-7ad5fc24fb97" name="char" isAbstract="false" isLeaf="false" cachedFullName="char">
+        <elementDefinition Id="acc88557-98d9-4597-ae09-65c1485b97c7" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="f9afc177-d9a0-405e-96bc-37f9c5b9f50b" name="ModelingProject1">
+    <elementDefinition Id="d22833d6-b566-4fde-857a-5cea74f5bf83" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5657ba4d-3793-44fc-adb9-21cd0748cf12">
+        <profileInstance Id="0760e8af-7cc7-44ad-88e3-13e984fa9c55" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="724366b0-7833-4918-9403-89d52b079ab4">
+        <profileInstance Id="d84a78f3-269e-46c6-83c0-de2e80bef498" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
